@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 262 83.3% 57.8%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262 83.3% 57.8%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 10%;
+    --foreground: 0 0% 88%;
+    --card: 240 10% 14%;
+    --card-foreground: 0 0% 88%;
+    --popover: 240 10% 14%;
+    --popover-foreground: 0 0% 88%;
+    --primary: 262 83.3% 57.8%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 20%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 20%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 25%;
+    --input: 240 3.7% 25%;
+    --ring: 262 83.3% 57.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .font-sans {
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  }
+  .font-heading {
+    font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .image-rendering-pixelated {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  .animate-gradient-button {
+    background-size: 200% 200%;
+    animation: gradient 4s ease infinite;
+    transition: all 0.3s ease;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* New animations for the about page */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-zoom {
+    transition: transform 0.5s ease;
+  }
+
+  .image-zoom:hover {
+    transform: scale(1.05);
+  }
+
+  /* Card entrance animation */
+  @keyframes cardEntrance {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Lightbox animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleOut {
+    from {
+      transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+
+  /* Add these new animations for the lightbox */
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-10%);
+      opacity: 0;
+    }
+    50.1% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-right {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+    50.1% {
+      transform: translateX(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-left {
+    animation: slide-left 0.6s ease-in-out;
+  }
+
+  .animate-slide-right {
+    animation: slide-right 0.6s ease-in-out;
+  }
+}
+

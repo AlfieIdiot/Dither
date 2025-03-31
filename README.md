@@ -37,7 +37,8 @@ Dither includes an educational section that explains:
 - Visual examples and comparisons of different dithering techniques
 - Best practices and use cases for different dithering methods
 
-![Dither Screenshot](public/og-image.png)
+![dithered-stucki](https://github.com/user-attachments/assets/00ed1ead-27f3-4abc-8f77-ec279087862f)
+
 
 ## Demo
 

